@@ -76,14 +76,6 @@ CropSure/
 - Deploy on cloud for broader accessibility.
 - Add a chatbot for instant AI assistance.
 
-## 🤝 Contributing
-
-Feel free to fork this repository, make improvements, and submit pull requests!
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
 ---
 
 Made with ❤️ for farmers! 🌾
