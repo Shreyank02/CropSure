@@ -1,83 +1,38 @@
-# CropSure - AI-Powered Agricultural Assistance
+# Fertilizer-Recommendation
 
-CropSure is an AI-driven web application designed to assist farmers with essential agricultural insights. It provides recommendations for fertilizers, predicts crop yields, detects plant diseases, and offers other useful services to improve farming efficiency.
+### Install
 
-## 🚀 Features
+This project requires **Python** and the following Python libraries installed:
 
-- **Fertilizer Recommendation**: Get AI-based suggestions for optimal fertilizer use.
-- **Crop Yield Prediction**: Predict crop yield based on historical data and input parameters.
-- **Plant Disease Detection**: Identify plant diseases using image-based deep learning models.
-- **Additional Services**: More AI-driven solutions to assist farmers.
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [seaborn](https://seaborn.pydata.org)
 
-## 🛠 Tech Stack
+You will also need to have software installed to run and execute a [Jupyter Notebook](http://jupyter.org/install.html) or you could use [Google Colab](https://colab.research.google.com)
 
-- **Frontend**: Streamlit (Python-based web framework)
-- **Backend**: Machine Learning models (Scikit-learn, TensorFlow)
-- **Models Used**:
-  - RandomForestClassifier (Fertilizer Recommendation)
-  - Pipeline Model (Crop Yield Prediction)
-  - CNN (Plant Disease Detection)
-- **Data Handling**: Pandas, NumPy
-- **Deployment**: Streamlit-based web app
+ 
 
-## 📦 Installation
+### Run
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/CropSure.git
-   cd CropSure
-   ```
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows: env\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Ensure model files (`pipe.pkl`, `fertilizer.pkl`, `plant_disease_prediction_model.h5`) are present in the project directory.
-5. Run the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
+Open the Fertilizer_recommendation.ipynb file in colab and run all the command in order to get result
 
-## 📝 Usage
+### Data
 
-1. Open the application in your browser.
-2. Select a service from the navigation panel.
-3. Input the required parameters.
-4. Click on the prediction button to get insights.
+The Fertilizer Recommendation dataset consists of 99 data points, with each datapoint having 8 features. This dataset can be found on the [Kaggle](https://www.kaggle.com/datasets/gdabhishek/fertilizer-prediction).
 
-## 🤖 Machine Learning Models
+**Features**
 
-- **Fertilizer Recommendation Model**: Uses a trained RandomForest model.
-- **Crop Yield Prediction Model**: Pipeline-based ML model.
-- **Plant Disease Detection**: CNN model trained on agricultural datasets.
+1. Temparature - Temperature of the area where field is situated in degree celsius
+2. Humidity - Humidity of the area where field is situated in %
+3. Moisture - Moisture of the area where field is situated in %
+4. Soil Type - Type of soil on which crop is grown eg. Sandy, Loamy
+5. Crop Type - Crop grown on the field eg. Sugarcane, cotton
+6. Nitrogen - ratio of Nitrogen content in soil
+7. Potassium - ratio of Potassium content in soil
+8. Phosphorous - ratio of Phosphorous content in soil
 
-## 📂 Project Structure
-```
-CropSure/
-│── app.py               # Main Streamlit App
-│── plant-disease-prediction-cnn-1/
-│   ├── plant_disease_prediction_model.h5  # Trained CNN model
-│   ├── class_indices.json
-│── crop yield prediction/
-│   ├── pipe.pkl         # Crop yield prediction model
-│── models/
-│   ├── fertilizer.pkl   # Fertilizer recommendation model
-│── requirements.txt     # Dependencies
-│── README.md            # Project Documentation
-```
+**Target Variable**
 
-## 🚀 Future Enhancements
-
-- Improve model accuracy with more data.
-- Deploy on cloud for broader accessibility.
-- Add a chatbot for instant AI assistance.
-
----
-
-Made with ❤️ for farmers! 🌾
-
-
+Fertilizer Name - What fertilizer is suited for the given values
