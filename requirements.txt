@@ -49,8 +49,9 @@ tenacity==8.5.0
 threadpoolctl==3.5.0
 toml==0.10.2
 torch==2.5.1
-torchaudio==2.5.1+cu118
-torchvision==0.20.1+cu118
+torchaudio==2.5.1
+torchvision==0.18.1
+-f https://download.pytorch.org/whl/torch_stable.html
 tornado==6.4.1
 typing_extensions==4.12.2
 tzdata==2024.1
