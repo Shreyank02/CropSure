@@ -1,5 +1,4 @@
-torch==2.5.1+cu118
--f https://download.pytorch.org/whl/torch_stable.html
+torch==2.5.1
 altair==5.4.1
 attrs==24.2.0
 blinker==1.8.2
