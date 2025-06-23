@@ -79,5 +79,5 @@ CropSure/
 
 ---
 
-Made with ❤️ for farmers! 🌾
+Made with love ❤️ for farmers! 🌾
 
